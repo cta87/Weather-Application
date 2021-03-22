@@ -3,7 +3,7 @@ const UTIL = require("./utilities");
 // ===== Variable Declaration =====
 
 // == APIs ==
-const apiChchCurrent = "http://api.openweathermap.org/data/2.5/weather?q=Christchurch,nz&units=metric&APPID=97e4aaab57372f7e5c79cfa1a8c1fbfe";
+const apiChchCurrent = "http://api.openweathermap.org/data/2.5/weather?q=Christchurch,nz&units=metric&APPID=";
 
 // ===== Class Constructors ======
 
@@ -169,7 +169,7 @@ let getDayOfTheWeek = function(){
 
 (async function(){
 
-    let christchurch = new CityCurrent("Christchurch,nz", "97e4aaab57372f7e5c79cfa1a8c1fbfe");
+    let christchurch = new CityCurrent("Christchurch,nz", "");
 
     // Null means any value, if anyday all days need to be included in day array
     let eventTest = new EventClass(13, 45, ["Monday", "Tuesday"], "off", 20, "Testing:", christchurch);
